@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58dc43de-e182-47d2-af9c-98844fb9889d" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/BorrowState.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pojo/User/User.java" afterPath="$PROJECT_DIR$/src/pojo/User/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/factory/BorrowFactory.java" afterPath="$PROJECT_DIR$/src/factory/BorrowFactory.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,9 +77,11 @@
       <file leaf-file-name="BorrowFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/factory/BorrowFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="426">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,9 +91,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -123,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/Service/TeacherBorrow.java" />
         <option value="$PROJECT_DIR$/src/Service/GraduateBorrow.java" />
         <option value="$PROJECT_DIR$/src/Service/UngraduateBorrow.java" />
+        <option value="$PROJECT_DIR$/src/utils/UserType.java" />
         <option value="$PROJECT_DIR$/src/factory/BorrowFactory.java" />
       </list>
     </option>
@@ -172,12 +173,6 @@
               <item name="Library-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library-prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -255,12 +250,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548491350543</updated>
       <workItem from="1548491353901" duration="3233000" />
-      <workItem from="1548509070958" duration="1347000" />
+      <workItem from="1548509070958" duration="2195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4580000" />
+    <option name="totallyTimeSpent" value="5428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -461,11 +456,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/factory/BorrowFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="426">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
