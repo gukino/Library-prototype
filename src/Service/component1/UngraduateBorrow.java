@@ -1,4 +1,4 @@
-package Service;
+package Service.component1;
 
 /**
  * @ClassNameUngraduateBorrow
@@ -6,7 +6,7 @@ package Service;
  * @Author
  * @Version 1.0
  **/
-public class UngraduateBorrow implements BorrowStrategy{
+public class UngraduateBorrow implements BorrowStrategy {
 
 	@Override
 	public void borrow() {
