@@ -1,5 +1,7 @@
 package pojo.User;
 
+import utils.BorrowState;
+
 public class User {
     protected int id;
     protected String username;
@@ -7,6 +9,8 @@ public class User {
     protected int maxBorrow;
     protected int hasBorrowed;
     protected int maxBorrowTime;
+    protected double penalty;
+    protected BorrowState borrowState;
 
     public int getId(){
         return id;
