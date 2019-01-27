@@ -11,5 +11,6 @@ public class Graduate extends User {
 		this.maxBorrowTime = 180;
 		this.borrowState = BorrowState.enable;
 		this.penalty = 0;
+		this.typeId = 3;
 	}
 }

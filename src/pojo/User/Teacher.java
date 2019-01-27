@@ -11,5 +11,6 @@ public class Teacher extends User {
 		this.maxBorrowTime = 365;
 		this.borrowState = BorrowState.enable;
 		this.penalty = 0;
+		this.typeId = 2;
 	}
 }
