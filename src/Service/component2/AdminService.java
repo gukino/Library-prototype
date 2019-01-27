@@ -11,6 +11,14 @@ public class AdminService implements AuthorizedService {
 		System.out.println("修改图书信息");
 	}
 
+	public void addtLiteratureInfo() {
+		System.out.println("新增图书信息");
+	}
+
+	public void deleteLiteratureInfo() {
+		System.out.println("删除图书信息");
+	}
+
 	public void addUser() {
 		System.out.println("新增用户");
 	}
