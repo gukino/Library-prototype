@@ -8,23 +8,27 @@ package Service.component2;
  **/
 public class AdminService implements AuthorizedService {
 	public void editLiteratureInfo() {
-
+		System.out.println("修改图书信息");
 	}
 
 	public void addUser() {
-
+		System.out.println("新增用户");
 	}
 
 	public void deleteUser() {
-
+		System.out.println("删除用户");
 	}
 
 	public void createUserInfo() {
+		System.out.println("新建用户信息");
+	}
 
+	public void editUserInfo() {
+		System.out.println("修改用户信息");
 	}
 
 	public void searchUserInfo() {
-
+		System.out.println("查询用户信息");
 	}
 
 	@Override

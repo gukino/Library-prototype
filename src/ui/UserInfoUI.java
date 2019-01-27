@@ -1,5 +1,6 @@
 package ui;
 
+import Service.component2.AdminService;
 import pojo.User.Graduate;
 import pojo.User.Teacher;
 import pojo.User.Undergraduate;
@@ -35,6 +36,7 @@ public class UserInfoUI extends JFrame{
     private JButton edit = new JButton("修改");
     private JButton del = new JButton("删除");
 
+
     public UserInfoUI(){
         this.setTitle("查询读者信息");
         this.setSize(860, 360);
@@ -43,6 +45,7 @@ public class UserInfoUI extends JFrame{
 
         addComponent();
         setTableData();
+        addEvent();
 
         this.setVisible(true);
     }
@@ -54,6 +57,28 @@ public class UserInfoUI extends JFrame{
         head.add("读者类型");
         head.add("可借状态");
         this.add(jsp);
+
+        jp.add(save);
+        jp.add(edit);
+
+        this.add(jp, BorderLayout.SOUTH);
+
+    }
+
+    public void addEvent(){
+        edit.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AdminService().editUserInfo();
+            }
+        });
+
+        save.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AdminService().createUserInfo();
+            }
+        });
 
     }
 
