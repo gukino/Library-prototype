@@ -8,6 +8,6 @@ package Service.component1;
  **/
 public interface BorrowStrategy {
 
-	public void borrow();
+	public String borrow();
 
 }

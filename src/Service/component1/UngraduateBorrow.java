@@ -9,7 +9,7 @@ package Service.component1;
 public class UngraduateBorrow implements BorrowStrategy {
 
 	@Override
-	public void borrow() {
-		System.out.println("本科生借书策略实现");
+	public String borrow() {
+		return"本科生借书策略实现:可借5本书，最大借阅时长90天";
 	}
 }

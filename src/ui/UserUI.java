@@ -24,25 +24,23 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 
-public class UserInfoUI extends JFrame{
+public class UserUI extends JFrame{
 
     private JLabel jl = new JLabel("读者信息", JLabel.CENTER);
     private JTable table = new MyTable();
     private JScrollPane jsp = new JScrollPane(table);
     private Vector<String> head = new Vector<String>();
     private JPanel jp = new JPanel();
-    private JButton save = new JButton("新增");
-    private JButton edit = new JButton("修改");
-    private JButton del = new JButton("删除");
 
-    public UserInfoUI(){
+
+    public UserUI(User user){
         this.setTitle("查询读者信息");
         this.setSize(860, 360);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         addComponent();
-        setTableData();
+        setTableData(user);
 
         this.setVisible(true);
     }
@@ -57,17 +55,12 @@ public class UserInfoUI extends JFrame{
 
     }
 
-    public void setTableData(){
-        User u1 = new Teacher("Tom", "Tom");
-        User u2 = new Undergraduate("Jerry", "jerry");
-        User u3 = new Graduate("Jack", "1");
+    public void setTableData(User user){
 
         Vector<Vector<Object>> body = new Vector<Vector<Object>>();
         //将数据库中数据取出，放入到表格所需的集合中
         List<User> list = new ArrayList<>();
-        list.add(u1);
-        list.add(u2);
-        list.add(u3);
+        list.add(user);
 
         //将List中的数据复制到表格所需的Vector中即可
         for (User reader : list) {

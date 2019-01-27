@@ -1,9 +1,10 @@
 package pojo.User;
 
+import Service.component4.Subject;
 import pojo.UserType;
 import utils.BorrowState;
 
-public class User {
+public class User implements Subject {
     protected int id;
     protected String username;
     protected String password;
@@ -13,6 +14,8 @@ public class User {
     protected double penalty;
     protected BorrowState borrowState = BorrowState.enable;
     protected int typeId;
+    protected String typeName;
+
 
     public int getId(){
         return id;
@@ -62,16 +65,25 @@ public class User {
         this.maxBorrowTime = maxBorrowTime;
     }
 
-    public int getType(){
+    public int getTypeId(){
         return typeId;
     }
 
-    public void setType(int typeId){
+    public void setTypeId(int typeId){
         this.typeId = typeId;
     }
 
     public BorrowState getBorrowState(){
         return borrowState;
+    }
+
+    public String getTypeName(){
+        return typeName;
+    }
+
+    public void update(String name, String password){
+        this.username = name;
+        this.password = password;
     }
 
 }
