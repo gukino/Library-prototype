@@ -1,5 +1,6 @@
 package ui;
 
+import Service.component2.AdminService;
 import pojo.Book;
 import utils.MyTable;
 
@@ -54,6 +55,7 @@ public class BookInfoUI extends JFrame{
         save.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
+                new AdminService().addtLiteratureInfo();
                 JOptionPane.showMessageDialog(null, "原型阶段，尚未完成", "提示", JOptionPane.WARNING_MESSAGE);
             }
         });
@@ -66,7 +68,7 @@ public class BookInfoUI extends JFrame{
                 }else{
                     int id = (Integer)table.getValueAt(row, 0);
                     JOptionPane.showMessageDialog(null, "原型阶段，仅提供界面展示", "提示", JOptionPane.WARNING_MESSAGE);
-
+                    new AdminService().editLiteratureInfo();
                     // new BookInfoEditUI(BookInfoUI.this, id);
                 }
             }
@@ -79,6 +81,7 @@ public class BookInfoUI extends JFrame{
                     JOptionPane.showMessageDialog(null, "请选择一条要删除的数据", "警告提示", JOptionPane.WARNING_MESSAGE);
                 }else{
                         JOptionPane.showMessageDialog(null, "删除成功！", "信息提示", JOptionPane.INFORMATION_MESSAGE);
+                        new AdminService().deleteLiteratureInfo();
                         setTableData();
                 }
             }
