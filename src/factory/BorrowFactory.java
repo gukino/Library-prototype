@@ -4,7 +4,6 @@ import Service.component1.BorrowStrategy;
 import Service.component1.GraduateBorrow;
 import Service.component1.TeacherBorrow;
 import Service.component1.UngraduateBorrow;
-import utils.UserType;
 
 /**
  * @ClassNameBorrowFactory
@@ -13,16 +12,16 @@ import utils.UserType;
  * @Version 1.0
  **/
 public class BorrowFactory {
-	public static BorrowStrategy createStrategy(UserType userType) {
+	public static BorrowStrategy createStrategy(String userType) {
 		BorrowStrategy borrowStrategy = null;
 		switch (userType) {
-			case Teacher:
+			case "教师":
 				borrowStrategy = new TeacherBorrow();
 				break;
-			case graduate:
+			case "研究生":
 				borrowStrategy = new GraduateBorrow();
 				break;
-			case Ungraduate:
+			case "本科生":
 				borrowStrategy = new UngraduateBorrow();
 				break;
 		}

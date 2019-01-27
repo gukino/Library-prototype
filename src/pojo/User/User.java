@@ -1,5 +1,6 @@
 package pojo.User;
 
+import pojo.UserType;
 import utils.BorrowState;
 
 public class User {
@@ -10,7 +11,8 @@ public class User {
     protected int hasBorrowed;
     protected int maxBorrowTime;
     protected double penalty;
-    protected BorrowState borrowState;
+    protected BorrowState borrowState = BorrowState.enable;
+    protected int typeId;
 
     public int getId(){
         return id;
@@ -59,4 +61,17 @@ public class User {
     public void setMaxBorrowTime(int maxBorrowTime){
         this.maxBorrowTime = maxBorrowTime;
     }
+
+    public int getType(){
+        return typeId;
+    }
+
+    public void setType(int typeId){
+        this.typeId = typeId;
+    }
+
+    public BorrowState getBorrowState(){
+        return borrowState;
+    }
+
 }

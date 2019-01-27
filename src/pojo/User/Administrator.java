@@ -1,5 +1,6 @@
 package pojo.User;
 
+
 public class Administrator extends User {
 	public Administrator(String username, String password) {
 		this.username = username;
@@ -7,5 +8,6 @@ public class Administrator extends User {
 		this.hasBorrowed = 0;
 		this.maxBorrow = 999;
 		this.maxBorrowTime = 999;
+		this.typeId = 1;
 	}
 }
